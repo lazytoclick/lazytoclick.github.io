@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lazytoclick.github.io/linux/solus-4-4/</loc>
+    
+    <lastmod>2024-10-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://lazytoclick.github.io/linux/solus-budgie-4-6/</loc>
     
     <lastmod>2024-10-19</lastmod>
@@ -11,25 +20,7 @@
   </url>
   
   <url>
-    <loc>http://lazytoclick.github.io/linux/solus-4-6/</loc>
-    
-    <lastmod>2024-10-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://lazytoclick.github.io/boshiamy/linux-and-boshiamy-feat-fcitx/</loc>
-    
-    <lastmod>2024-10-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/linux/solus-4-4/</loc>
     
     <lastmod>2024-10-19</lastmod>
     
@@ -1553,7 +1544,28 @@
   </url>
   
   <url>
+    <loc>http://lazytoclick.github.io/tags/apple/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://lazytoclick.github.io/tags/boshiamy/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lazytoclick.github.io/tags/macos/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lazytoclick.github.io/tags/macosx/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1602,21 +1614,7 @@
   </url>
   
   <url>
-    <loc>http://lazytoclick.github.io/tags/apple/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/macos/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/macosx/</loc>
+    <loc>http://lazytoclick.github.io/tags/windows11/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1631,13 +1629,6 @@
   
   <url>
     <loc>http://lazytoclick.github.io/tags/archlabs/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/windows11/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1749,6 +1740,20 @@
   </url>
   
   <url>
+    <loc>http://lazytoclick.github.io/tags/microsoftupdatecatalog/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lazytoclick.github.io/tags/windowsupdate/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://lazytoclick.github.io/tags/elementoryos/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1771,20 +1776,6 @@
   
   <url>
     <loc>http://lazytoclick.github.io/tags/virtualbox/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/microsoftupdatecatalog/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/windowsupdate/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1875,6 +1866,13 @@
   </url>
   
   <url>
+    <loc>http://lazytoclick.github.io/tags/freebsd/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://lazytoclick.github.io/tags/apfs/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1904,13 +1902,6 @@
   
   <url>
     <loc>http://lazytoclick.github.io/tags/fusiondrive/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/freebsd/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2029,6 +2020,13 @@
   </url>
   
   <url>
+    <loc>http://lazytoclick.github.io/tags/google/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://lazytoclick.github.io/tags/googleAccount/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -2058,13 +2056,6 @@
   
   <url>
     <loc>http://lazytoclick.github.io/tags/importExportToolsNG/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/google/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2155,6 +2146,13 @@
   </url>
   
   <url>
+    <loc>http://lazytoclick.github.io/tags/pop-os/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://lazytoclick.github.io/tags/davinciresolve17/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -2163,13 +2161,6 @@
   
   <url>
     <loc>http://lazytoclick.github.io/tags/nvidia/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://lazytoclick.github.io/tags/pop-os/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
