@@ -22,16 +22,16 @@
     var CONFIG = {"hostname":"lazytoclick.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言Fctix，中文名稱是「小企鵝輸入法」，而談到 Fcitx 的話，我個人會用 fcitx(4) 與 Fcitx5 來區分這 2 代的輸入法框架。">
+  <meta name="description" content="前言Fctix，中文名稱是「小企鵝輸入法」。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux 與嘸蝦米 (feat. Fcitx)">
 <meta property="og:url" content="http://lazytoclick.github.io/boshiamy/linux-and-boshiamy-feat-fcitx/index.html">
 <meta property="og:site_name" content="lazyToClick">
-<meta property="og:description" content="前言Fctix，中文名稱是「小企鵝輸入法」，而談到 Fcitx 的話，我個人會用 fcitx(4) 與 Fcitx5 來區分這 2 代的輸入法框架。">
+<meta property="og:description" content="前言Fctix，中文名稱是「小企鵝輸入法」。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://live.staticflickr.com/65535/53690555272_1d6d1b734c_b.jpg">
 <meta property="article:published_time" content="2024-10-17T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-10-19T08:32:01.921Z">
+<meta property="article:modified_time" content="2024-10-22T04:48:46.025Z">
 <meta property="article:author" content="lazyToClick">
 <meta property="article:tag" content="linux">
 <meta property="article:tag" content="boshiamy">
@@ -287,8 +287,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Fctix，中文名稱是「小企鵝輸入法」，而談到 Fcitx 的話，我個人會用 fcitx(4) 與 Fcitx5 來區分這 2 代的輸入法框架。<br><img src="https://live.staticflickr.com/65535/53690555272_1d6d1b734c_b.jpg"></p>
-<p>從 2021 年 7 月開始，我持續追縱各個發行版收錄 fcitx(4) 或 Fcitx5 相關套件情形至今，已有 3 年餘。</p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Fctix，中文名稱是「小企鵝輸入法」。<br><img src="https://live.staticflickr.com/65535/53690555272_1d6d1b734c_b.jpg"></p>
+<p>談到 Fcitx 的話，我個人會用 fcitx(4) 與 Fcitx5 來區分這 2 代的輸入法框架，從 2021 年 7 月開始，我持續追縱各個發行版收錄 fcitx(4) 或 Fcitx5 相關套件情形至今，已有 3 年餘。</p>
 <p>截至 2024 年 8 月 1 日，除了少數幾支發行版，還是以安裝與使用 fcitx(4) 較為方便之外，相信，套件收錄已經日趨完整的 Fcitx5，將會是中文輸入法框架主要的選擇。</p>
 <p>隨著每支發行版的迭代更新，在這個時間點，我還是試著把各大發行版分類，再分別整理出 Fcitx 與嘸蝦米時的安裝過程紀錄與建議，希望這樣的紀錄，對有需要的伙伴，有一定的參考度。</p>
 <h3 id="Debian-與-ubuntu-及其衍生發行版"><a href="#Debian-與-ubuntu-及其衍生發行版" class="headerlink" title="Debian 與 ubuntu 及其衍生發行版"></a>Debian 與 ubuntu 及其衍生發行版</h3><h4 id="▼Fcitx5-可直接從軟體庫安裝-fcitx5-table-extra"><a href="#▼Fcitx5-可直接從軟體庫安裝-fcitx5-table-extra" class="headerlink" title="▼Fcitx5(可直接從軟體庫安裝 fcitx5-table-extra)"></a>▼Fcitx5(可直接從軟體庫安裝 <code>fcitx5-table-extra</code>)</h4><p>Tip：「ubuntu 24.04 LTS」及其衍生發行版，已經將 <code>fcitx5-table-extra</code> 收納至軟體庫，所以，先是一道指令將套件安裝進來，接著可以從圖形介面新增「嘸蝦米」就能搞定。</p>
@@ -337,7 +337,7 @@
 <h3 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h3><ol>
 <li><p>Linux 上的嘸蝦米輸入法走過不少輸入法平台，其中 SCIM 與 gcin 似乎已然是過去式。近幾年，比較為人所用的主要就是 iBus 與 Fcitx。選用 iBus 的話，拿行易有限公司官網的表格檔服用，肯定是最佳的選擇。</p>
 </li>
-<li><p>隨著每支發行版的迭代更新，越來越多的系統預載 Fcitx5 已然是個趨勢。無論如何，「好安裝」是我個人最先考慮的選項。僅管，fcitx(4) 從 2015 年 5 月 26 日就已停止更新，而後繼版本的 Fcitx5 目前是持續更新的。我自己在 2 個版本做出抉擇的時候，通常會以「好安裝」為優先考量，而好不好安裝，也視每一支發行版的 Repository 收納程度而定。</p>
+<li><p>fcitx(4) 從 2015 年 5 月 26 日就已停止更新，而後繼版本的 Fcitx5 目前是持續更新的。我自己在 2 個版本做出抉擇的時候，通常會以「好安裝」為優先考量，而好不好安裝，也視每一支發行版的 Repository 收納程度而定。從 2021 年至今，隨著每支發行版的迭代更新，除了越來越多的系統預載 Fcitx5，同時 Fcitx5 的相關套件收納程度也越來越完整。可以想見，Fcitx5 不僅會成為首選，慢慢地已經走向全面取代 fcitx(4) 的角色。</p>
 </li>
 <li><p>暫且先不論合法授權的問題的話，我想，透過 Fcitx 在 Linux 上面所呈現的，正好是我曾經設想過的畫面：作業系統(也包含 macOS 與 Windows)直接內建嘸蝦米，我要做的事就是去新增嘸蝦米輸入法就好。那麼，是不是更能夠把行易有限公司提到的理想延伸到更遠的地方去：讓更多人體會到嘸蝦米「創造一個易學、快速又快樂的中文輸入環境」。</p>
 </li>
