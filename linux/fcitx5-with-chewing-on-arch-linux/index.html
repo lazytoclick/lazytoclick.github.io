@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://live.staticflickr.com/65535/52075062620_8806282204_b.jpg">
 <meta property="og:image" content="https://live.staticflickr.com/65535/52074580761_3f958f77a9_b.jpg">
 <meta property="article:published_time" content="2022-05-12T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-03-17T02:10:34.254Z">
+<meta property="article:modified_time" content="2024-10-24T05:34:23.459Z">
 <meta property="article:author" content="lazyToClick">
 <meta property="article:tag" content="linux">
 <meta property="article:tag" content="fcitx5">
@@ -294,48 +294,33 @@
 <p>在 Garuda Linux 上，透過 Setup Assistant 安裝與使用 Fcitx5 搭配嘸蝦米是非常方便的事，也是我個人目前接觸到的 Arch Linux 衍生發行版當中，最便利的。</p>
 <p>但是，不是每個人都用嘸蝦米，對於不少微軟新注音的使用者而言，也會想要在 Linux 上面使用相對比較熟悉的輸入法。</p>
 <p>我忘記，自己是怎麼得知「新酷音輸入法」的，不過，總覺得或許是一個可行的方案。</p>
-<hr>
 <h3 id="安裝-Fcitx5-搭配「新酷音輸入法」"><a href="#安裝-Fcitx5-搭配「新酷音輸入法」" class="headerlink" title="安裝 Fcitx5 搭配「新酷音輸入法」"></a>安裝 Fcitx5 搭配「新酷音輸入法」</h3><ol>
-<li>Arch Linux 及其衍生發行版，幾乎都可以透過下指令的方式(詳見第 4 點)，將 Fcitx5 配「新酷音輸入法」，一併安裝到系統裡。</li>
-<li>重開機之後，因為只安裝「新酷音輸入法」，所以，需要中文輸入的時候，直接用 Ctrl+Space 就可以切換到「新酷音輸入法」。</li>
-<li>Garuda Linux 也可以，只不過，使用 Garuda Linux 一段時間後，我建議伙伴，可以試著透過 Setup Assistant 安裝。</li>
-<li>參考指令(如下)</li>
+<li><p>Arch Linux 及其衍生發行版，幾乎都可以透過下指令的方式(詳見第 4 點)，將 Fcitx5 配「新酷音輸入法」，一併安裝到系統裡。</p>
+</li>
+<li><p>重開機之後，因為只安裝「新酷音輸入法」，所以，需要中文輸入的時候，直接用 Ctrl+Space 就可以切換到「新酷音輸入法」。</p>
+</li>
+<li><p>Garuda Linux 也可以，只不過，使用 Garuda Linux 一段時間後，我建議伙伴，可以試著透過 Setup Assistant 安裝。</p>
+</li>
+<li><p>參考指令(如下)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-chinese-addons fcitx5-configtool fcitx5-chewing</span><br><span class="line">Enter a selection: [Enter]</span><br><span class="line">:: Proceed with installation? [Y/n] [Enter]</span><br><span class="line">sudo vim /etc/environment</span><br><span class="line">i</span><br><span class="line">GTK_IM_MODULE=fcitx</span><br><span class="line">QT_IM_MODULE=fcitx</span><br><span class="line">XMODIFIERS=@im=fcitx</span><br><span class="line">[Esc]</span><br><span class="line">:wq</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>我把執行上述指令的過程，截圖放到下面的 Flickr 相簿，給有需要的伙伴參考。<br><a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/albums/72177720299077189" title="installingFcitx5andfctix5-chewingonArcoLinuxL"><img src="https://live.staticflickr.com/65535/52083649798_ab9ea042cb_b.jpg" alt="installingFcitx5andfctix5-chewingonArcoLinuxL"></a></p>
+</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">sudo pacman -S fcitx5 fcitx5-im fcitx5-chinese-addons fcitx5-configtool fcitx5-chewing</span><br><span class="line">Enter a selection: [Enter]</span><br><span class="line">:: Proceed with installation? [Y/n] [Enter]</span><br><span class="line">sudo vim /etc/environment</span><br><span class="line">i</span><br><span class="line">GTK_IM_MODULE=fcitx</span><br><span class="line">QT_IM_MODULE=fcitx</span><br><span class="line">XMODIFIERS=@im=fcitx</span><br><span class="line">[Esc]</span><br><span class="line">:wq</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
-
-<ol start="6">
-<li>我把執行上述指令的過程，截圖放到下面的 Flickr 相簿，給有需要的伙伴參考。<br><a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/albums/72177720299077189" title="installingFcitx5andfctix5-chewingonArcoLinuxL"><img src="https://live.staticflickr.com/65535/52083649798_ab9ea042cb_b.jpg" alt="installingFcitx5andfctix5-chewingonArcoLinuxL"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></li>
-</ol>
-<hr>
 <h3 id="已經有-Fcitx5，另外安裝「新酷音輸入法」"><a href="#已經有-Fcitx5，另外安裝「新酷音輸入法」" class="headerlink" title="已經有 Fcitx5，另外安裝「新酷音輸入法」"></a>已經有 Fcitx5，另外安裝「新酷音輸入法」</h3><p>已經有 Fcitx5 的伙伴，只要再安裝「新酷音輸入法」的話，就是把表格檔與相依套件載回來，再進入設定的畫面把「新酷音輸入法」加進來，就搞定。</p>
 <p>以下紀錄，是我自己走過的程序。</p>
 <p>首先，在 Terminal 下一道指令(如下)。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx5-chewing</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52068396883/in/dateposted-public/" title="Screenshot_~ : fish_4"><img src="https://live.staticflickr.com/65535/52068396883_c8a889bbcb_o.png" alt="Screenshot_~ : fish_4"></a></p>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-<p>接著，重新啟動 Fcitx5。要完成這個步驟，有 2 個方式可以達成。</p>
+<p><a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52068396883/in/dateposted-public/" title="Screenshot_~ : fish_4"><img src="https://live.staticflickr.com/65535/52068396883_c8a889bbcb_o.png" alt="Screenshot_~ : fish_4"></a><br>接著，重新啟動 Fcitx5。要完成這個步驟，有 2 個方式可以達成。</p>
 <ol>
-<li><p>可以用指令(如下)。</p>
+<li><p>可以用指令(如下)。  </p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fcitx5 -rd</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>也可以用圖形介面的方式進行(下圖)。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52073743552/in/dateposted-public/" title="Screenshot_garuda-dr460nized-linux-zen-220329_1"><img src="https://live.staticflickr.com/65535/52073743552_616a53c45b_o.png" alt="Screenshot_garuda-dr460nized-linux-zen-220329_1"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></li>
+</li>
 </ol>
-<hr>
-<h3 id="加入「新酷音輸入法」"><a href="#加入「新酷音輸入法」" class="headerlink" title="加入「新酷音輸入法」"></a>加入「新酷音輸入法」</h3><p>進到 Fcitx5 的設定，就會看到「新酷音輸入法」已經出現在「繁體中文(台灣)」的列表當中，新增之後套用，基本上就可以搞定。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52074810029/in/dateposted-public/" title="Screenshot_輸入法 *_1"><img src="https://live.staticflickr.com/65535/52074810029_7cf75e9e3a_b.jpg" alt="Screenshot_輸入法 *_1"></a></p>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-<p> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52075062620/in/dateposted-public/" title="Screenshot_輸入法 _1"><img src="https://live.staticflickr.com/65535/52075062620_8806282204_b.jpg" alt="Screenshot_輸入法 _1"></a></p>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-<p> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52074580761/in/dateposted-public/" title="Screenshot_輸入法 _2"><img src="https://live.staticflickr.com/65535/52074580761_3f958f77a9_b.jpg" alt="Screenshot_輸入法 _2"></a></p>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-<hr>
+<h3 id="加入「新酷音輸入法」"><a href="#加入「新酷音輸入法」" class="headerlink" title="加入「新酷音輸入法」"></a>加入「新酷音輸入法」</h3><p>進到 Fcitx5 的設定，就會看到「新酷音輸入法」已經出現在「繁體中文(台灣)」的列表當中，新增之後套用，基本上就可以搞定。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52074810029/in/dateposted-public/" title="Screenshot_輸入法 *_1"><img src="https://live.staticflickr.com/65535/52074810029_7cf75e9e3a_b.jpg" alt="Screenshot_輸入法 *_1"></a> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52075062620/in/dateposted-public/" title="Screenshot_輸入法 _1"><img src="https://live.staticflickr.com/65535/52075062620_8806282204_b.jpg" alt="Screenshot_輸入法 _1"></a> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52074580761/in/dateposted-public/" title="Screenshot_輸入法 _2"><img src="https://live.staticflickr.com/65535/52074580761_3f958f77a9_b.jpg" alt="Screenshot_輸入法 _2"></a></p>
 <h3 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h3><p>至於使用上的心得，…我問了一下借用我電腦的人(純 Windows User)，他認為在智慧選字的部分，還是比不上微軟新注音，算是勉強可以用的。我自己簡單測試幾個字詞，也發現雖然一開始不一定能夠智慧選字，但學過 1 次就容易順起來。</p>
-<hr>
 <h3 id="延伸閱讀"><a href="#延伸閱讀" class="headerlink" title="延伸閱讀"></a>延伸閱讀</h3><ol>
 <li><a target="_blank" rel="noopener" href="http://chewing.im/">新酷音輸入法</a></li>
 <li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E6%96%B0%E9%85%B7%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95">新酷音輸入法 - 維基百科，自由的百科全書</a></li>
@@ -361,8 +346,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/linux/20-days-after-shifting-to-garuda-linux/" rel="prev" title="轉換至 Garuda Linux 之 20 天後">
-      <i class="fa fa-chevron-left"></i> 轉換至 Garuda Linux 之 20 天後
+    <a href="/boshiamy/arcolinuxl-and-boshiamy/" rel="prev" title="ArcoLinuxL 與嘸蝦米">
+      <i class="fa fa-chevron-left"></i> ArcoLinuxL 與嘸蝦米
     </a></div>
       <div class="post-nav-item">
     <a href="/windows/kb5013943-windows-11-os-build-22000-675/" rel="next" title="[版本更新] 快速回顧 微軟發布 KB5013943 (Windows 11 作業系統組建 22000.675)">

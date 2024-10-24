@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://live.staticflickr.com/65535/52157343361_121a7b5ff1_b.jpg">
 <meta property="og:image" content="https://live.staticflickr.com/65535/52157343351_2c30ef5ffc_b.jpg">
 <meta property="article:published_time" content="2022-06-19T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-03-17T02:11:38.934Z">
+<meta property="article:modified_time" content="2024-10-24T05:32:26.299Z">
 <meta property="article:author" content="lazyToClick">
 <meta property="article:tag" content="linux">
 <meta property="article:tag" content="fcitx5">
@@ -273,14 +273,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>830</span>
+              <span>824</span>
             </span>
             <span class="post-meta-item" title="所需閱讀時間">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>2 分鐘</span>
+              <span>1 分鐘</span>
             </span>
 
         </div>
@@ -293,38 +293,28 @@
 
       
         <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本次紀錄的是在 ubuntu 22.04 LTS 上的安裝 Fcitx5 搭配「新酷音輸入法」的過程，Arch Linux 及其衍生發行版的安裝方式，可以參考另外一篇貼文：<a target="_blank" rel="noopener" href="https://mtmatt.one/linux/fcitx5-with-chewing-on-arch-linux/">在 Arch Linux 衍生發行版上用 Fcitx5 搭配新酷音</a>。</p>
-<hr>
 <h3 id="安裝-Fcitx5-搭配「新酷音輸入法」"><a href="#安裝-Fcitx5-搭配「新酷音輸入法」" class="headerlink" title="安裝 Fcitx5 搭配「新酷音輸入法」"></a>安裝 Fcitx5 搭配「新酷音輸入法」</h3><ol>
 <li><p>我先下一道指令(如下)，確認 fcitx5-chewing 已經在軟體資源庫 (Software Repositories) 裡。</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt search fcitx5-chewing</span><br></pre></td></tr></table></figure>
 <p> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157515124/in/dateposted-public/" title="fcitx5-chewingEp1"><img src="https://live.staticflickr.com/65535/52157515124_eeb839a7d9_b.jpg" alt="fcitx5-chewingEp1"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </li>
 <li><p>想到在 ubuntu 上，以一道指令就可以搞定 fcitx(4) 與嘸蝦米輸入法，我也依樣畫葫蘆下一道指令(如下)，並且觀察 APT 抓到的相依套件後，發現同樣的方法用在 Fcitx5 是行不通的。</p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install fcitx5-chewing</span><br></pre></td></tr></table></figure>
 <p> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157285458/in/dateposted-public/" title="fcitx5-chewingEp2"><img src="https://live.staticflickr.com/65535/52157285458_21e7cb314e_b.jpg" alt="fcitx5-chewingEp2"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </li>
-<li><p>下列指令是我最後下的指令，下完指令後，觀察 APT 回饋的相依套件安裝建議是必要的，而我觀察完，認為沒有什麼問題，就按[Enter]讓安裝程序跑完。</p>
+<li><p>下列指令是我最後下的指令，下完指令後，觀察 APT 回饋的相依套件安裝建議是必要的，而我觀察完，認為沒有什麼問題，就按[Enter]讓安裝程序跑完。  </p>
  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install fcitx5 fcitx5-chinese-addons fcitx5-config-qt fcitx5-chewing</span><br></pre></td></tr></table></figure>
 <p> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157515104/in/dateposted-public/" title="fcitx5-chewingEp3"><img src="https://live.staticflickr.com/65535/52157515104_db54d59aaf_b.jpg" alt="fcitx5-chewingEp3"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </li>
 <li><p>(↓)更換輸入法框架：必須走一趟「設定值」→「地區和語言」→「管理安裝的語言」→跳出「語言支援」視窗後→將「鍵盤輸入法系統」改成【Fcitx 5】，再「重新登入」或「重開機」。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52156326267/in/dateposted-public/" title="fcitx5-chewingEp4"><img src="https://live.staticflickr.com/65535/52156326267_78500d9486_b.jpg" alt="fcitx5-chewingEp4"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </li>
 <li><p>(↓)重新進入系統後，可以看到右上角出現一個小鍵盤，點一下就可以看到「新酷音輸入法」。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157768705/in/dateposted-public/" title="fcitx5-chewingEp5"><img src="https://live.staticflickr.com/65535/52157768705_b6d034f920_n.jpg" alt="fcitx5-chewingEp5"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </li>
-<li><p>(↓)使用 Ctrl+Space 切換到「新酷音輸入法」，耍酷(？)一下。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157343361/in/dateposted-public/" title="fcitx5-chewingEp6"><img src="https://live.staticflickr.com/65535/52157343361_121a7b5ff1_b.jpg" alt="fcitx5-chewingEp6"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-<p>  <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157343351/in/dateposted-public/" title="fcitx5-chewingEp7"><img src="https://live.staticflickr.com/65535/52157343351_2c30ef5ffc_b.jpg" alt="fcitx5-chewingEp7"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></li>
+<li><p>(↓)使用 Ctrl+Space 切換到「新酷音輸入法」，耍酷(？)一下。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157343361/in/dateposted-public/" title="fcitx5-chewingEp6"><img src="https://live.staticflickr.com/65535/52157343361_121a7b5ff1_b.jpg" alt="fcitx5-chewingEp6"></a> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/194265827@N08/52157343351/in/dateposted-public/" title="fcitx5-chewingEp7"><img src="https://live.staticflickr.com/65535/52157343351_2c30ef5ffc_b.jpg" alt="fcitx5-chewingEp7"></a></p>
+</li>
 </ol>
-<hr>
 <h3 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h3><p>對我來說，想要使用嘸蝦米輸入法，只要再另外安裝表格檔，就可以搞定。</p>
 <p>至於，Fcitx5 搭新酷音輸入法，夠不夠穩定，這個部分，由於我使用幾個小時沒有什麼問題，因此，仍有待時間去驗證。</p>
-<hr>
 <h3 id="延伸閱讀"><a href="#延伸閱讀" class="headerlink" title="延伸閱讀"></a>延伸閱讀</h3><ol>
 <li><a target="_blank" rel="noopener" href="http://chewing.im/">新酷音輸入法</a></li>
 <li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E6%96%B0%E9%85%B7%E9%9F%B3%E8%BC%B8%E5%85%A5%E6%B3%95">新酷音輸入法 - 維基百科，自由的百科全書</a></li>
