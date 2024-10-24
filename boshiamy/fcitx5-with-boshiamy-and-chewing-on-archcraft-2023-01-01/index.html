@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://live.staticflickr.com/65535/52647634711_99679103de_c.jpg">
 <meta property="og:image" content="https://live.staticflickr.com/65535/52647903504_2790d1e999_c.jpg">
 <meta property="article:published_time" content="2023-01-25T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-03-17T01:17:21.318Z">
+<meta property="article:modified_time" content="2024-10-24T05:38:49.171Z">
 <meta property="article:author" content="lazyToClick">
 <meta property="article:tag" content="archlinux">
 <meta property="article:tag" content="linux">
@@ -273,7 +273,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>620</span>
+              <span>614</span>
             </span>
             <span class="post-meta-item" title="所需閱讀時間">
               <span class="post-meta-item-icon">
@@ -293,24 +293,16 @@
 
       
         <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>同樣身為 Arch Linux 的衍生發行版，Archcraft 夾帶 Openbox 與 bspwm 的特性，也可以使用 Fcitx5 讓新酷音與嘸蝦米活起來，在設定上略有不同，這一篇文章，就是紀錄我在設定上的過程。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/jutedev/52647135917/in/photostream/" title="archcraft2023.01.01onVirtualBoxEp (14)"><img src="https://live.staticflickr.com/65535/52647135917_c9bf52cabe_c.jpg" alt="archcraft2023.01.01onVirtualBoxEp (14)"></a></p>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-<hr>
 <h3 id="安裝流程"><a href="#安裝流程" class="headerlink" title="安裝流程"></a>安裝流程</h3><ol>
 <li><p>下一道指令，把需要用到的 Fcitx5 相關套件安裝進來：<code>sudo pacman -S fcitx5 fcitx5-im fcitx5-chinese-addons fcitx5-configtool fcitx5-chewing fcitx5-table-extra</code>。(下圖所示，少了 fcitx5-chewing 這支套件，我是後來再補上的XD) <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/jutedev/52648079155/in/dateposted/" title="archcraft2023.01.01onVirtualBoxEp (10)"><img src="https://live.staticflickr.com/65535/52648079155_cc10433f88_c.jpg" alt="archcraft2023.01.01onVirtualBoxEp (10)"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </li>
 <li><p>再下一道指令：<code>sudo vim /etc/enviroment</code>，並將以下資料寫入，下圖所示是用複製貼上 (這才是王道呀XD)。</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">GTK_IM_MODULE=fcitx</span><br><span class="line">QT_IM_MODULE=fcitx</span><br><span class="line">XMODIFIERS=@im=fcitx</span><br><span class="line">SDL_IM_MODULE=fcitx</span><br><span class="line">GLFW_IM_MODULE=ibus</span><br></pre></td></tr></table></figure>
-<p> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/jutedev/52647903519/in/photostream/" title="archcraft2023.01.01onVirtualBoxEp (11)"><img src="https://live.staticflickr.com/65535/52647903519_b359bf216a_c.jpg" alt="archcraft2023.01.01onVirtualBoxEp (11)"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-<p>  <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/jutedev/52647634711/in/photostream/" title="archcraft2023.01.01onVirtualBoxEp (12)"><img src="https://live.staticflickr.com/65535/52647634711_99679103de_c.jpg" alt="archcraft2023.01.01onVirtualBoxEp (12)"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GTK_IM_MODULE=fcitx</span><br><span class="line">QT_IM_MODULE=fcitx</span><br><span class="line">XMODIFIERS=@im=fcitx</span><br><span class="line">SDL_IM_MODULE=fcitx</span><br><span class="line">GLFW_IM_MODULE=ibus</span><br></pre></td></tr></table></figure>
+<p> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/jutedev/52647903519/in/photostream/" title="archcraft2023.01.01onVirtualBoxEp (11)"><img src="https://live.staticflickr.com/65535/52647903519_b359bf216a_c.jpg" alt="archcraft2023.01.01onVirtualBoxEp (11)"></a> <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/jutedev/52647634711/in/photostream/" title="archcraft2023.01.01onVirtualBoxEp (12)"><img src="https://live.staticflickr.com/65535/52647634711_99679103de_c.jpg" alt="archcraft2023.01.01onVirtualBoxEp (12)"></a></p>
 </li>
 <li><p>讓 Fcitx5 在系統啟動時自動載入：在 Terminal 下一道指令：<code>sudo vim /etc/xdg/openbox/autostart</code>，在檔案最後寫入 <code>fcitx5 -d</code>，然後重新開機，原則上，Fcitx5 就會隨著系統啟動而自動執行。 <a target="_blank" rel="noopener" href="https://www.flickr.com/photos/jutedev/52647903504/in/photostream/" title="archcraft2023.01.01onVirtualBoxEp (13)"><img src="https://live.staticflickr.com/65535/52647903504_2790d1e999_c.jpg" alt="archcraft2023.01.01onVirtualBoxEp (13)"></a></p>
- <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></li>
+</li>
 </ol>
-<hr>
 <h3 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h3><p>※參考資料：<a target="_blank" rel="noopener" href="https://wiki.archlinuxcn.org/zh-tw/Fcitx5">Fcitx5 - Arch Linux 中文维基</a></p>
 
     </div>
@@ -336,8 +328,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/boshiamy/fcitx5-with-boshiamy-and-chewing-on-archlabs-linux-2023-01-20/" rel="prev" title="在 ArchLabs Linux 2023.01.20 上用 Fcitx5 搭配新酷音與嘸蝦米">
-      <i class="fa fa-chevron-left"></i> 在 ArchLabs Linux 2023.01.20 上用 Fcitx5 搭配新酷音與嘸蝦米
+    <a href="/boshiamy/fcitx5-with-boshiamy-on-archcraft-2023-01-01/" rel="prev" title="在 Archcraft 2023.01.01 上用 Fcitx5 搭配嘸蝦米">
+      <i class="fa fa-chevron-left"></i> 在 Archcraft 2023.01.01 上用 Fcitx5 搭配嘸蝦米
     </a></div>
       <div class="post-nav-item">
     <a href="/linux/archlabs-linux-2023-01-20/" rel="next" title="來玩 ArchLabs Linux 2023.01.20">
