@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://live.staticflickr.com/65535/53591854237_de346e9a28_c.jpg">
 <meta property="og:image" content="https://live.staticflickr.com/65535/53864031713_ff807d13c3_b.jpg">
 <meta property="article:published_time" content="2024-03-17T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-08-23T12:26:35.087Z">
+<meta property="article:modified_time" content="2024-10-29T05:11:41.217Z">
 <meta property="article:author" content="lazyToClick">
 <meta property="article:tag" content="macos">
 <meta property="article:tag" content="highsierra">
@@ -287,9 +287,8 @@
         <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><img src="https://live.staticflickr.com/65535/53591854237_de346e9a28_c.jpg"></p>
 <p>今天，我想把 macOS High Sierra 砍掉重練，所以，重開機之後，就按住 Command + R，準備來一場重灌之旅。</p>
 <p>想不到，天不從人願，在我執行 macOS High Sierra 的安裝程式時，跳出「無法聯絡復原伺服器。」</p>
-<p>卡關，無法繼續，Google 一下，發現不少人遇到這樣的問題。</p>
+<p>卡關，無法繼續，Google 之後，發現不少人遇到這樣的問題。</p>
 <p>我整理一下，總共有 4 種解法，並且紀錄在本篇貼文裡。</p>
-<hr>
 <h3 id="解法-一-：改變-NVRAM-軟體更新網址"><a href="#解法-一-：改變-NVRAM-軟體更新網址" class="headerlink" title="解法(一)：改變 NVRAM 軟體更新網址"></a>解法(一)：改變 NVRAM 軟體更新網址</h3><ol>
 <li><p>說明：開啟 Terminal，先確認一下所使用的系統時間是否正確，再更改 NVRAM 軟體更新網址。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">date //這個指令是要確認自己的系統時間是否正確</span><br><span class="line">ntpdate -u time.apple.com //如果不正確，就用這個指令更新一下系統時間</span><br><span class="line">nvram IASUCatalogURL=&quot;http://swscan.apple.com/content/catalogs/others/index-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog&quot;</span><br></pre></td></tr></table></figure>
@@ -315,16 +314,16 @@
 <li><p>有一點可能要注意：macOS Monterey 通常會是在 <code>Apple 檔案系統</code>（Apple File System，簡稱 APFS）上運行，然而，我記得 macOS High Sierra 雖然也支援 APFS，但是它的系統安裝程式似乎無法直接將 macOS High Sierra 安裝在 APFS 上頭。印象中，我的經驗是安裝到一半時就會卡住不動，如果您也遇到這樣的狀況，或是想要避免這樣的狀況，建議可以在重新安裝 macOS High Sierra 時，將硬碟格式化為 <code>Mac OS 擴充格式（日誌式）</code>，應該就可順利服用。抑或是堅持想讓 macOS High Sierra 在 APFS 上頭運行的話，我會建議從更早之前的版本，安裝後再升級到 macOS High Sierra，若我沒有記錯，升級的過程就會詢問使用者要不要改用 APFS。</p>
 </li>
 </ol>
-<hr>
 <h3 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h3><ol>
 <li><p>目前手邊僅存的 Mac Mini（2014 年末），曾經，被拿來安裝過幾支不同的 Linux Distro。但，我得說，好玩歸好玩，除非 macOS 都跑不動，不然，原汁原味的 macOS 還是比較合口味。</p>
 </li>
 <li><p>原本系統預測要 2 小時 19 分鐘才能夠完成安裝 macOS Monterey，實際上不到 1 小時就能搞定，時間花費還是有點久(我的網路環境是「台灣大寬頻 1G」)。升級到 macOS Monterey 後，我感受到比較多的是整合上帶來的方便，其中一項是我在 iOS 上購買的幾支 App，現在也能夠在 macOS Monterey 使用，這感覺超爽的，問題就是系統運行不到 1 個月，就跑得實在不是普通的慢。</p>
 </li>
-<li><p>我讓 macOS Monterey 運行 4 個月，還是決定用一支狀況良好的隨身碟製作成「可開機安裝磁碟」，讓自己回到 macOS High Sierra，降刷的時間約半小時就可以搞定。這次降刷，除了嘸蝦米輸入法外，只安裝任何 Firefox 與 Facebook Messenger 這 2 支 App。…只能說：「回到 macOS High Sierra 的感覺真好。」降刷讓老機器價值催到底。我想，是時候好好思考一下，該準備入手一部新的桌機了。 <img src="https://live.staticflickr.com/65535/53864031713_ff807d13c3_b.jpg" alt="downgradeTomacOSHighSierraOnMacMiniLate2014"/></p>
+<li><p>我讓 macOS Monterey 運行 4 個月，還是決定用一支狀況良好的隨身碟製作成「可開機安裝磁碟」，讓自己回到 macOS High Sierra，降刷的時間約半小時就可以搞定。這次降刷，除了嘸蝦米輸入法外，只安裝 Firefox 與 Facebook Messenger 這 2 支 App。說實在的，回到 macOS High Sierra 的感覺真好。</p>
+</li>
+<li><p>降刷讓老機器價值催到底，至今還可以持續使用 macOS High Sierra，算是非常夠本。 <img src="https://live.staticflickr.com/65535/53864031713_ff807d13c3_b.jpg" alt="downgradeTomacOSHighSierraOnMacMiniLate2014"/></p>
 </li>
 </ol>
-<hr>
 <h3 id="延伸閱讀"><a href="#延伸閱讀" class="headerlink" title="延伸閱讀"></a>延伸閱讀</h3><ol>
 <li><p><a target="_blank" rel="noopener" href="https://support.apple.com/zh-tw/111931">Mac mini（2014 年末）- 技術規格 - Apple 支援 (台灣)</a></p>
 </li>
